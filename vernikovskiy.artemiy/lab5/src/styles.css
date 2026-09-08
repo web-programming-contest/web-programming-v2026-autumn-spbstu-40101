@@ -1,0 +1,188 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slider-title {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 2rem;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.slider-button {
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    transform 0.1s;
+  flex-shrink: 0;
+}
+
+.slider-button:hover {
+  background-color: #ccc;
+}
+
+.slider-button:active {
+  transform: scale(0.95);
+}
+
+.slide-wrapper {
+  flex: 1;
+  min-width: 0;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgb(0 0 0);
+  overflow: hidden;
+  padding: 20px;
+}
+
+.book-card {
+  display: flex;
+  gap: 20px;
+  text-align: left;
+}
+
+.book-cover {
+  width: 150px;
+  height: 220px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgb(0 0 0);
+  flex-shrink: 0;
+}
+
+.cover-text {
+  text-shadow: 1px 1px 3px rgb(0 0 0);
+  overflow-wrap: break-word;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.book-title {
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+.book-author {
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+.book-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stars {
+  color: #f39c12;
+  font-size: 1.2rem;
+}
+
+.rating-value {
+  font-weight: bold;
+  color: #e67e22;
+}
+
+.book-description {
+  color: #555;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.book-price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.slide-caption {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.slider-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.slide-counter {
+  font-size: 1rem;
+  color: #555;
+}
+
+.pagination {
+  display: flex;
+  gap: 10px;
+}
+
+.pagination-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ccc;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    transform 0.2s;
+}
+
+.pagination-dot:hover {
+  background-color: #aaa;
+}
+
+.pagination-dot.active {
+  background-color: #3498db;
+  transform: scale(1.3);
+}
