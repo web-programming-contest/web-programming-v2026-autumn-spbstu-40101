@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.flag {
+  position: relative;
+  background-color: #006A4E;
+  width: 300px;
+  height: 200px;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #F42A41;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
