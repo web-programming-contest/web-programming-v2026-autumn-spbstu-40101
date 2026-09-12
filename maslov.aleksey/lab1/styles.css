@@ -8,7 +8,7 @@ body {
 
 .flag {
   position: relative;
-  background-color: #006A4E;
+  background-color: #006a4e;
   width: 300px;
   height: 200px;
 }
@@ -18,7 +18,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #F42A41;
+  background-color: #f42a41;
   width: 100px;
   height: 100px;
   border-radius: 50%;
