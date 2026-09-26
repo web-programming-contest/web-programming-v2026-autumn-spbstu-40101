@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лабораторная работа 4</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <h1>Студенты</h1>
+
+      <section class="add-student">
+        <h2>Добавить студента</h2>
+
+        <form data-testid="entity-form">
+          <label>
+            ID
+            <input name="id" type="number" required />
+          </label>
+
+          <label>
+            Имя
+            <input name="name" type="text" required />
+          </label>
+
+          <button type="submit">Добавить студента</button>
+        </form>
+      </section>
+
+      <section class="students">
+        <h2>Список студентов</h2>
+
+        <div class="student-list" data-testid="entity-list"></div>
+      </section>
+    </main>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
