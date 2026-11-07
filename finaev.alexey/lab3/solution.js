@@ -3,7 +3,7 @@ export function findMaxSubarraySum(arr, n) {
     return -1;
   }
 
-  let i = 0;
+  let res = -Infinity;
   let res = 0;
 
   while (arr.length >= i + n) {
