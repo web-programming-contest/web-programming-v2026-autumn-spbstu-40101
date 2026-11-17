@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+}
+
+.page {
+  display: grid;
+  min-height: 100vh;
+  padding: 24px;
+  place-items: center;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: min(100%, 480px);
+  padding: 32px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgb(0 0 0 / 0.12);
+}
+
+.registration-form-title {
+  margin: 0;
+  text-align: center;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-field label {
+  font-weight: 600;
+}
+
+.form-field input,
+.form-field select {
+  width: 100%;
+  padding: 12px 14px;
+  font: inherit;
+  color: inherit;
+  background-color: #fff;
+  border: 1px solid #9ca3af;
+  border-radius: 6px;
+}
+
+.consent-field {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.consent-field input {
+  margin-top: 3px;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  border-color: #008000;
+  outline: 3px solid rgb(0 128 0 / 0.2);
+}
+
+.submit-button {
+  padding: 12px 20px;
+  font: inherit;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  background-color: #008000;
+  border: 0;
+  border-radius: 6px;
+}
+
+.submit-button:hover {
+  background-color: #006400;
+}
+
+.submit-button:focus-visible {
+  outline: 3px solid rgb(0 128 0 / 0.3);
+  outline-offset: 2px;
+}
+
+@media (width <= 480px) {
+  .page {
+    padding: 12px;
+  }
+
+  .registration-form {
+    padding: 20px;
+  }
+}
