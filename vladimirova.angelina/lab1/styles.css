@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+main {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.task-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.task {
+  padding: 8px 0;
+}
+
+.task::before {
+  display: inline-block;
+  width: 1.8em;
+}
+
+.task-done::before {
+  content: '\2705';
+}
+
+.task-cancelled::before {
+  content: '\274C';
+}
+
+.task-in-progress::before {
+  content: '\23F3';
+}
